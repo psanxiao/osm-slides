@@ -1,0 +1,411 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Introducción a la Información Geográfica y OpenStreetMap</title>
+
+		<meta name="description" content="Introducción a la Información Geográfica y OpenStreetMap">
+		<meta name="author" content="Pablo Sanxiao">
+
+		<link rel="stylesheet" href="reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="reveal.js/css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>Introducción a la información geográfica y OpenStreetMap</h2>
+					<div>
+						<br>
+					</div>
+						<span style="font-size: 20px;"><a href="http://psanxiao.com">Pablo Sanxiao</a> (@psanxiao)</span> </font><br>
+						<span style="font-size: 20px;"><a href="http://psanxiao.com">Micho García</a> (@michogar)</span> </font>
+					<div>
+
+						<div></div>
+						<div style="text-align: left; ">
+							<br>
+						</div>
+						<div style="text-align: center;"><img src="images/logos.png" style="width: 464.38620689655176px; height: 76px; max-height: none; max-width: none; border: none">
+
+						</div>
+						<div></div>
+					</div>
+				</section>
+				<section>
+					<blockquote>
+						"El 80% de la información es geográfica"
+					</blockquote>
+				</section>
+				<section>
+					<blockquote>
+						"<s>El 80% de la información es geográfica</s>"
+						</br>
+						</br>
+						"TODA la información es geográfica"
+					</blockquote>
+				</section>
+				<section data-background-image="./images/snow-map.png" data-background-size="contain"></section>
+				<section data-background-image="./images/snow-map-zoom.png" data-background-size="contain"></section>
+				<section data-background-image="./images/facebook-map.png" data-background-size="contain"></section>
+				<section>
+					<p>DATOS vs INFORMACIÓN</p>
+				</section>
+				<section data-background-image="./images/mercator.jpg" data-background-size="contain"></section>
+				<section>
+					<table>
+						<tr>
+							<td>ASIA</td>
+							<td width="250px"></td>
+							<td>~44 millones km²</td>
+						</tr>
+						<tr>
+							<td>AMÉRICA</td>
+							<td></td>
+							<td>~42 millones km²</td>
+						</tr>
+						<tr>
+							<td>ÁFRICA</td>
+							<td></td>
+							<td>~30 millones km²</td>
+						</tr>
+						<tr>
+							<td>ANTÁRTIDA</td>
+							<td></td>
+							<td>~14 millones km²</td>
+						</tr>
+						<tr>
+							<td>EUROPA</td>
+							<td></td>
+							<td>~10 millones km²</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<td>OCEANÍA</td>
+							<td width="310px"></td>
+							<td>~9 millones km²</td>
+						</tr>
+					</table>
+					<h2></h2>
+					<table>
+						<tr>
+							<td>GROENLANDIA</td>
+							<td width="215px"></td>
+							<td>~2 millones km²</td>
+						</tr>
+					</table>
+				</section>
+				<section data-background-image="./images/peters.jpg" data-background-size="contain"></section>
+				<section>
+					<h3>#OpenData</h3>
+					<blockquote>
+						"Los datos abiertos son datos que pueden ser utilizados, reutilizados y redistribuidos libremente por cualquier persona, y que se encuentran sujetos, cuando más, al requerimiento de atribución y de compartirse de la misma manera en que aparecen"
+					</blockquote>
+				</section>
+				<section data-background-image="./images/osm.png" data-background-size="contain">
+					<h1><font style="font-style: inherit; font-variant: inherit; font-size: 112px;"> <font color="#434343">Introducción a OpenStreetMap</font> </font></h1>
+				</section>
+				<section data-background-image="./images/osm-coristanco.png" data-background-size="contain"></section>
+				<section data-background-image="./images/gmaps-coristanco.png" data-background-size="contain">
+				</section>
+				<section>
+					<blockquote>OSM no es un mapa, es una base de datos</blockquote>
+				</section>
+				<section>
+					<h2>
+					<br>
+					</h2>
+					<div>
+						<br>
+					</div>
+					<div>
+						<br>
+					</div>
+					<div>
+						<br>
+					</div>
+					<div>
+						<div>
+							&nbsp; &lt;node id='2030888363' timestamp='2012-11-24T21:32:50Z' uid='1081335' user='DEM67' visible='true' version='1' changeset='14019740' lat='43.19154' lon='-8.73547'&gt;
+						</div>
+						<div>
+							&nbsp; &nbsp; &lt;tag k='amenity' v='school' /&gt;
+						</div>
+						<div>
+							&nbsp; &nbsp; &lt;tag k='name' v='C.P.I Alcalde Xosé Pichel' /&gt;
+						</div>
+						<div>
+							&nbsp; &lt;/node&gt;
+						</div>
+					</div>
+				</section>
+				<section data-background-image="./images/marker1.jpg" data-background-size="cover"></section>
+				<section>
+					<h2>Open Database License</h2>
+					<ul>
+						<li>Licencia de OSM desde septiembre 2012,<br/>antes CC-BY-SA</li>
+						<li>En resumen:
+							<ul>
+								<li><strong>Puedes:</strong> compartir, crear, adaptar</li>
+								<li><strong>Siempre que:</strong> atribución, compartir-igual, siempre abierto</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section>
+		            <h2>Números</h2>
+		            <p style="margin-bottom:.5em;">A 29 de septiembre de 2016:</p>
+		            <ul>
+		              <li>3.1M usuarios</li>
+		              <li>5.382M puntos GPS</li>
+		              <li>3.548M nodos</li>
+		              <li>370M líneas</li>
+		              <li>4,5M relaciones</li>
+		              <li><a href="http://www.openstreetmap.org/stats/data_stats.html">Fuente</a></li>
+		            </ul>
+          		</section>
+          		<section data-background-image="./images/estandar.png">
+					<h2>
+					<br>
+					</h2>
+				</section>
+				<section data-background-image="./images/transporte.png">
+					<h2>
+					<br>
+					</h2>
+				</section>
+				<section data-background-image="./images/ciclista.png">
+					<h2>
+					<br>
+					</h2>
+				</section>
+				<section data-background-image="./images/mapquest.png">
+					<h2>
+					<br>
+					</h2>
+				</section>
+				<section data-background-image="./images/humanitario.png">
+					<h2>
+					<br>
+					</h2>
+				</section>
+				<section data-background-image="./images/map-pirate-mapbox.png">
+					<h2>
+					<br>
+					</h2>
+				</section>
+				<section data-background-image="./images/lhc-osm.png">
+					<h2>
+					<br>
+					</h2>
+				</section>
+          		 <section>
+		            <img src="./images/map_compare_caja_magica.png" alt="OpenStreetMap vs Google Maps en la Caja Mágica" />
+		            <p>Fuente: <a href="http://tools.geofabrik.de/mc/#16/40.3715/-3.6844&num=2&mt0=mapnik&mt1=google-map">GeoFrabrik Tools</a></p>
+		          </section>
+		          <section>
+		            <img src="./images/geofabrik-barcelona.png" alt="OpenStreetMap vs Google Maps en Barcelona" />
+		              <p>Fuente: <a href="http://tools.geofabrik.de/mc/#16/41.3809/2.1840&num=2&mt0=mapnik&mt1=google-map">GeoFrabrik Tools</a></p>
+		          </section>
+		          <section>
+		            <img src="./images/map_compare_Puerta_Brandemburgo.png" alt="OpenStreetMap vs Google Maps en la Puerta de Brandemburgo" />
+		              <p>Fuente: <a href="http://tools.geofabrik.de/mc/#15/52.5159/13.3779&num=2&mt0=mapnik&mt1=google-map">GeoFrabrik Tools</a></p>
+          		</section>
+          		<section>
+		            <img src="./images/geofabrik-coristanco.png" alt="OpenStreetMap vs Google Maps en Coristanco" />
+		              <p>Fuente: <a href="http://tools.geofabrik.de/mc/#16/43.1924/-8.7365&num=2&mt0=mapnik&mt1=google-map">GeoFrabrik Tools</a></p>
+          		</section>
+				<section>
+					<h2>
+					<br>
+					</h2>
+					<h2>
+					<br>
+					</h2>
+					<h2>
+					<br>
+					</h2>
+					<h2>¿Cómo generamos los datos?</h2>
+				</section>
+				<section data-background-image="./images/wikipedia.jpg">
+					<h2>
+					<br>
+					</h2>
+				</section>
+				<section data-background-image="./images/Openstreetmap.jpg" data-background-size="cover">
+					<h2>
+					<br>
+					</h2>
+				</section>
+				<section data-background-image="./images/calcar-osm.png" data-background-size="cover">
+					<h2>
+					<br>
+					</h2>
+				</section>
+				<section>
+					<h2>
+					<br>
+					</h2>
+					<h2>
+					<br>
+					</h2>
+					<h2>
+					<br>
+					</h2>
+					<h2>GPX</h2>
+				</section>
+				<section data-background-size="initial" data-background-image="./images/GPS_navigating_home.png">
+					<h2>
+					<br>
+					</h2>
+					<div>
+						<br>
+					</div>
+					<div>
+						<br>
+					</div>
+				</section>
+				<section data-background-image="./images/edit-gpx.png">
+					<h2>
+					<br>
+					</h2>
+				</section>
+				<section>
+					<h2>
+						<br>
+					</h2>
+					<h2>
+						<br>
+					</h2>
+					<h2>
+						<br>
+					</h2>
+					<h2>Mapping party</h2>
+				</section>
+				<section data-background-image="./images/party.jpg">
+					<h2>
+						<br>
+					</h2>
+				</section>
+				<section data-background-image="./images/mapping_party_deusto_2011.jpg">
+					<h2>
+						<br>
+					</h2>
+				</section>
+				<section>
+					<h2>Field Papers</h2>
+					<a href="http://www.flickr.com/photos/kachkaev/5710460686/" title=
+					"2011-05-10 (0010) by Alexander Kachkaev, on Flickr">
+					<img src="./images/field-paper.jpg" width=
+					"640" alt="2011-05-10 (0010)"></a>
+				</section>
+				<section data-background-size="cover" data-background-image="./images/mapping-party2.jpg">
+					<h2>
+						<br>
+					</h2>
+				</section>
+				<section data-background-image="./images/osm-09-mapping-party.png">
+					<h2>
+						<br>
+					</h2>
+				</section>
+				<section data-background-image="./images/Haiyan_2013-11-07_0120Z.jpg" data-background-size="cover">
+					<h2>
+						<br>
+					</h2>
+				</section>
+				<section data-background-image="./images/typhoon_haiyan_rtr_img.jpg">
+					<h2>
+						<br>
+					</h2>
+				</section>
+				<section data-background-image="./images/Typhoon-Haiyan.jpg">
+					<h2>
+						<br>
+					</h2>
+				</section>
+				<section>
+		            <h2>HOT</h2>
+
+		            <p><a href="http://hot.openstreetmap.org/">Humanitarian OpenStreetMap Team</a></p>
+
+		            <ul class="discs larger">
+		              <li>Se organiza a partir del <strong>terremoto</strong> de Haití</li>
+
+		              <li>Se realizan trabajos de formación en zonas
+		              necesitadas</li>
+
+		              <li>La mayor parte del trabajo es remoto</li>
+
+		              <li>Actualmente trabajando en Nepal, Malawi, Indonesia, Nigeria, ... </li>
+		            </ul>
+
+		            <p style="text-align:center;margin-top:20px;"><a href=
+		            "http://hot.openstreetmap.org/" target="_blank"><img src="./images/hot.jpg"
+		            height="200" alt="HOT" /></a></p>
+		        </section>
+				<section>
+		            <img style="max-height:500px;" src="./images/map_compare-tacloban.png" alt="Filipinas">
+		            <p><a href="http://tools.geofabrik.de/mc/?lon=125.00151&lat=11.24581&zoom=17&num=2&mt0=mapnik&mt1=google-map">Tacloban</a> ·
+		              <a href="http://wiki.openstreetmap.org/wiki/Typhoon_Haiyan">wiki</a> · <a href="http://resultmaps.neis-one.org/osm-typhoon-haiyan-2013/#8/11.682/122.953">mapa de cambios</a>
+		              <br/> ¡4.8M de cambios en la base de datos en 2/3 semanas!</p>
+          		</section>
+          		<section data-background-image="./images/foto_kibera.JPG">
+				</section>
+				<section>
+					<a target="_blank" href="http://tools.geofabrik.de/mc/?lon=36.78774&lat=-1.31289&zoom=17&num=2&mt0=mapnik&mt1=google-map"><img src="./images/kibera_osm_vs_gmaps.png" /></a>
+					<a href="http://www.mapkibera.org/"><h3>Kibera (Nairobi), Kenia</h3></a>
+				</section>
+				<section data-background-image="./images/ptolomeo.jpg">
+					<h1><font color="#000000">¿Preguntas?</font></h1>
+				</section>
+				<section>
+		            <h2>Licencia</h2>
+			            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+			              <img alt="Creative Commons License" style="border-width:0" src="./images/cc-by-sa.png"/>
+			            </a><br/>
+			            Introducción a la Información Geográfica y OpenStreetMap by Pablo Sanxiao and Micho García
+			            is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+			            Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+			            <br>
+			            <br>
+			            <small>Algunas diapositivas han sido tomadas de la presentación <a href="jsanz.github.io/slides-osm/noesunmapa/index.html">"OSM no es un mapa, es una base de datos"</a>
+			             de Jorge Sanz</small>
+				</section>
+			</div>
+		</div>
+
+		<script src="reveal.js/lib/js/head.min.js"></script>
+		<script src="reveal.js/js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'reveal.js/plugin/markdown/marked.js' },
+					{ src: 'reveal.js/plugin/markdown/markdown.js' },
+					{ src: 'reveal.js/plugin/notes/notes.js', async: true },
+					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
